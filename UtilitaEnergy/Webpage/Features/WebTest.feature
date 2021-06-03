@@ -28,8 +28,10 @@ Scenario Outline: Order T-shirt (and Verify in order history)
 	And Close the browser
 
 	Examples:
-	| Test          | Item     | Payment   |
-	| Order T-shirt | T-shirts | bank wire |
+	| Test              | Item     | Payment   |
+	| Bank Wire T-shirt | T-shirts | bank wire |
+	| Cheque T-shirt    | T-shirts | cheque    |
+
 
 
 Scenario Outline: Update Personal Information(First Name)in My Accounts 
@@ -38,7 +40,8 @@ Scenario Outline: Update Personal Information(First Name)in My Accounts
 	And update the <firstName>
 	And Enter the <password>
 	And click save
-	Then Close the browser
+	Then assert the update was successful
+	And Close the browser
 
 	Examples: 
 	| test | firstName | password |

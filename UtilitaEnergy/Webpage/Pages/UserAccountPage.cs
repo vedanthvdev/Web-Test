@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -30,6 +31,8 @@ namespace UtilitaEnergy.Webpage.Pages
 
         public void orderHistory() => btnorderHistory.Click();
 
+        public IWebElement viewChangeSuccess => WebDriver.FindElement(By.XPath("//*[@id='center_column']/div/p"));
 
+        public void UpdateSuccess() => Assert.IsTrue(viewChangeSuccess.Displayed);
     }
 }

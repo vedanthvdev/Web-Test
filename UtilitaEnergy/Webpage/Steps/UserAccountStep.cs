@@ -43,5 +43,13 @@ namespace UtilitaEnergy.Webpage.Steps
             page.personalInfo();
 
         }
+
+        [Then(@"assert the update was successful")]
+        public void ThenAssertTheUpdateWasSuccessful()
+        {
+            page = new UserAccountPage(_driver);
+            page.UpdateSuccess();
+        }
+
     }
 }

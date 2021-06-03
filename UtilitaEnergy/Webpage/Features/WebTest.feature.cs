@@ -102,7 +102,8 @@ namespace UtilitaEnergy.Webpage.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Order T-shirt (and Verify in order history)")]
-        [NUnit.Framework.TestCaseAttribute("Order T-shirt", "T-shirts", "bank wire", null)]
+        [NUnit.Framework.TestCaseAttribute("Bank Wire T-shirt", "T-shirts", "bank wire", null)]
+        [NUnit.Framework.TestCaseAttribute("Cheque T-shirt", "T-shirts", "cheque", null)]
         public virtual void OrderT_ShirtAndVerifyInOrderHistory(string test, string item, string payment, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -191,7 +192,7 @@ this.FeatureBackground();
             argumentsOfScenario.Add("firstName", firstName);
             argumentsOfScenario.Add("password", password);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update Personal Information(First Name)in My Accounts", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 35
+#line 37
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -214,23 +215,26 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
-#line 36
+#line 38
  testRunner.When("clicked on your account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 37
+#line 39
  testRunner.And("go into personal information tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 38
+#line 40
  testRunner.And(string.Format("update the {0}", firstName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 39
+#line 41
  testRunner.And(string.Format("Enter the {0}", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 40
+#line 42
  testRunner.And("click save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 41
- testRunner.Then("Close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 43
+ testRunner.Then("assert the update was successful", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 44
+ testRunner.And("Close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
