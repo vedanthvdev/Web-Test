@@ -1,23 +1,34 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using TechTalk.SpecFlow;
 using UtilitaEnergy.Webpage.Pages;
 
 namespace UtilitaEnergy.Webpage.Steps
 {
     [Binding]
-    class OrderHistoryStep
+    class OrderHistoryStep 
     {
         OrderHistoryPage page = null;
+        OrderConfirmationPage sage = null;
         IWebDriver _driver = DriverHelper.Driver;
+
+        string Reference = null;
+        [Then(@"confirm the order is complete")]
+        public void ThenConfirmtheOrderIsComplete()
+        {
+            sage = new OrderConfirmationPage(_driver);
+            Reference = sage.COnfirmOrderComplete();
+        }
 
         [Then(@"confirm the Item is present with (.*)")]
         public void ThenConfirmTheItemIsPresentWith(String p0)
         {
             page = new OrderHistoryPage(_driver);
-            page.OrderHistoryConfirm(p0);
+            String OrderHistoryReference = page.OrderHistoryConfirm(p0).Substring(10,8);
+            Assert.IsTrue(Reference.Contains(OrderHistoryReference, StringComparison.OrdinalIgnoreCase));
+            
         }
+
     }
 }

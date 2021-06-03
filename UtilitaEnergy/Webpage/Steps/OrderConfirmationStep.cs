@@ -10,11 +10,7 @@ namespace UtilitaEnergy.Webpage.Steps
         OrderConfirmationPage page = null;
         IWebDriver _driver = DriverHelper.Driver;
 
-        [Then(@"confirm the order is complete")]
-        public void ThenConfirmtheOrderIsComplete()
-        {
-            page = new OrderConfirmationPage(_driver);
-            page.COnfirmOrderComplete();
-        }
+
     }
+
 }

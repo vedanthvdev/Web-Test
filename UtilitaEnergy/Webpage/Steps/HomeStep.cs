@@ -34,5 +34,11 @@ namespace UtilitaEnergy.Webpage.Steps
             page.account();
         }
 
+        [Then(@"Close the browser")]
+        public void ThenCloseTheBrowser()
+        {
+            _driver.Close();
+        }
+
     }
 }
