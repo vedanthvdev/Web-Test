@@ -1,11 +1,6 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
-using System;
-using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
+﻿using OpenQA.Selenium;
 
-namespace UtilitaEnergy.Webpage.Page
+namespace WebTest.Webpage.Page
 {
     class HomePage
     {

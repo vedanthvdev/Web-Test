@@ -1,9 +1,9 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
-using UtilitaEnergy.Webpage.Page;
+using WebTest.Webpage.Page;
 
-namespace UtilitaEnergy.Webpage.Steps
+namespace WebTest.Webpage.Steps
 {
     [Binding]
     class HomeStep
