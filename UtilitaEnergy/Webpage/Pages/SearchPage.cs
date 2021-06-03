@@ -1,10 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace UtilitaEnergy.Webpage.Pages
+namespace WebTest.Webpage.Pages
 {
     class SearchPage
     {

@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using System;
 
-namespace UtilitaEnergy.Webpage.Pages
+namespace WebTest.Webpage.Pages
 {
     class OrderConfirmationPage
     {

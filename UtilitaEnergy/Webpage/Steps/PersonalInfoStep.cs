@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
-using UtilitaEnergy.Webpage.Pages;
+using WebTest.Webpage.Pages;
 
-namespace UtilitaEnergy.Webpage.Steps
+namespace WebTest.Webpage.Steps
 {
     [Binding]
     class PersonalInfoStep

@@ -1,10 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace UtilitaEnergy.Webpage.Pages
+namespace WebTest.Webpage.Pages
 {
     class UserAccountPage
     {

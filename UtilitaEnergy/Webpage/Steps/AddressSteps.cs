@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 using TechTalk.SpecFlow;
-using UtilitaEnergy.Webpage.Pages;
+using WebTest.Webpage.Pages;
 
-namespace UtilitaEnergy.Webpage.Steps
+namespace WebTest.Webpage.Steps
 {
     [Binding]
     class AddressSteps
