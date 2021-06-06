@@ -2,6 +2,9 @@
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using WebsiteTest.Webpage.Page;
+using AventStack.ExtentReports.Reporter;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Gherkin.Model;
 
 namespace WebsiteTest.Webpage.Steps
 {
