@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace UtilitaEnergy.Webpage.Features
+namespace WebsiteTest.Webpage.Features
 {
     using TechTalk.SpecFlow;
     using System;

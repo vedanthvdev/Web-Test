@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using System;
 
-namespace WebTest.Webpage.Pages
+namespace WebsiteTest.Webpage.Pages
 {
     class OrderHistoryPage
     {

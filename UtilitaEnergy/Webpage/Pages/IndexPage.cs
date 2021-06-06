@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace WebTest.Webpage.Page
+namespace WebsiteTest.Webpage.Page
 {
     class HomePage
     {

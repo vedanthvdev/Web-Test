@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 
-namespace WebTest.Webpage.Pages
+namespace WebsiteTest.Webpage.Pages
 {
     class SearchPage
     {

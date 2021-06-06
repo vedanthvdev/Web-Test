@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilitaEnergy", "UtilitaEnergy\UtilitaEnergy.csproj", "{CB139F6C-A860-41A3-BF3A-9D6B28A7FFFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteTest", "UtilitaEnergy\WebsiteTest.csproj", "{CB139F6C-A860-41A3-BF3A-9D6B28A7FFFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
