@@ -3,7 +3,7 @@ using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
-namespace WebTest.Webpage.Pages
+namespace WebsiteTest.Webpage.Pages
 {
     class SignInPage
     {

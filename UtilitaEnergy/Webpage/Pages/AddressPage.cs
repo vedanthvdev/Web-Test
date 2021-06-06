@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace WebTest.Webpage.Pages
+namespace WebsiteTest.Webpage.Pages
 {
     class AddressPage
     {
