@@ -52,9 +52,9 @@ namespace WebsiteTest.Webpage.Steps
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
 
-            PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("TestStatus", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
-            MethodInfo getter = pInfo.GetGetMethod(nonPublic: true);
-            object TestResult = getter.Invoke(ScenarioContext.Current, null);
+            //PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("TestStatus", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+            //MethodInfo getter = pInfo.GetGetMethod(nonPublic: true);
+            //object TestResult = getter.Invoke(ScenarioContext.Current, null);
 
             if (ScenarioContext.Current.TestError == null)
             {
@@ -82,17 +82,17 @@ namespace WebsiteTest.Webpage.Steps
             }
 
             //For step that aren't defined yet, that would skip
-            if (TestResult.ToString() == "StepDefinitionPending")
-            {
-                if (stepType == "Given")
-                    scenarios.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
-                else if (stepType == "When")
-                    scenarios.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
-                else if (stepType == "Then")
-                    scenarios.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
-                else if (stepType == "And")
-                    scenarios.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
-            }
+            //if (TestResult.ToString() == "StepDefinitionPending")
+            //{
+            //    if (stepType == "Given")
+            //        scenarios.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+            //    else if (stepType == "When")
+            //        scenarios.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+            //    else if (stepType == "Then")
+            //        scenarios.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+            //    else if (stepType == "And")
+            //        scenarios.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+            //}
         }
 
 
