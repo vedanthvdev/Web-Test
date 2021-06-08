@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Reflection;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
@@ -35,12 +34,14 @@ namespace WebsiteTest.Webpage.Steps
         }
 
         [BeforeFeature]
+        [Obsolete]
         public static void BeforeFeature()
         {
             featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
         }
 
         [BeforeScenario]
+        [Obsolete]
         public static void BeforeScenario()
         {
             scenarios = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
@@ -48,6 +49,7 @@ namespace WebsiteTest.Webpage.Steps
         }
 
         [AfterStep]
+        [Obsolete]
         public void InsertReportingSteps()
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
