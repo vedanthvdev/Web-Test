@@ -102,11 +102,17 @@ namespace WebsiteTest.Webpage.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Order T-shirt (and Verify in order history)")]
-        [NUnit.Framework.TestCaseAttribute("Bank Wire T-shirt", "T-shirts", "bank wire", null)]
+        [NUnit.Framework.CategoryAttribute("Alpha")]
         [NUnit.Framework.TestCaseAttribute("Cheque T-shirt", "T-shirts", "cheque", null)]
         public virtual void OrderT_ShirtAndVerifyInOrderHistory(string test, string item, string payment, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "Alpha"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("Test", test);
             argumentsOfScenario.Add("Item", item);
@@ -174,19 +180,23 @@ this.FeatureBackground();
 #line 27
  testRunner.Then(string.Format("confirm the Item is present with {0}", payment), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 28
- testRunner.And("Close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Update Personal Information(First Name)in My Accounts")]
+        [NUnit.Framework.CategoryAttribute("Beta")]
         [NUnit.Framework.TestCaseAttribute("name", "Vedanth", "abcdef", null)]
         public virtual void UpdatePersonalInformationFirstNameInMyAccounts(string test, string firstName, string password, string[] exampleTags)
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] @__tags = new string[] {
+                    "Beta"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("test", test);
             argumentsOfScenario.Add("firstName", firstName);
