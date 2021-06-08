@@ -53,7 +53,7 @@ namespace WebsiteTest.Webpage.Steps
         public void InsertReportingSteps()
         {
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
-
+            int chintu;
             //PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("TestStatus", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
             //MethodInfo getter = pInfo.GetGetMethod(nonPublic: true);
             //object TestResult = getter.Invoke(ScenarioContext.Current, null);
