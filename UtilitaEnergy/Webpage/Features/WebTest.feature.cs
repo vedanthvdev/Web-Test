@@ -87,7 +87,7 @@ namespace WebsiteTest.Webpage.Features
                         "Email",
                         "password"});
             table1.AddRow(new string[] {
-                        "vedanth.vasudev@gmail.com",
+                        "vedanth@123.com",
                         "abcdef"});
 #line 6
  testRunner.And("enters his credentials", ((string)(null)), table1, "And ");

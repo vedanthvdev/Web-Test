@@ -4,8 +4,8 @@ Background: User Log in
 	Given the website 'http://automationpractice.com/index.php' has loaded
 	And User clicks on Sign in Page 
 	And enters his credentials
-	| Email                     | password |
-	| vedanth.vasudev@gmail.com | abcdef   |
+ | Email           | password |
+ | vedanth@123.com | abcdef   |
 	And clicks Submit
 	Then assert he enters his home page
 
