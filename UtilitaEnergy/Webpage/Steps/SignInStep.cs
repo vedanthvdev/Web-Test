@@ -15,6 +15,7 @@ namespace WebsiteTest.Webpage.Steps
         public void GivenEntersHisCredentials(Table table)
         {
             page = new SignInPage(_driver);
+            if(_driver.Url=="http://automationpractice.com/index.php?controller=authentication&back=my-account")
             page.EnterUserCred(table);
         }
 
@@ -22,6 +23,7 @@ namespace WebsiteTest.Webpage.Steps
         public void GivenClicksSubmit()
         {
             page = new SignInPage(_driver);
+            if(_driver.Url=="http://automationpractice.com/index.php?controller=authentication&back=my-account")
             page.Submit();
         }
     }
