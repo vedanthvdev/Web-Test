@@ -2,8 +2,6 @@
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using WebsiteTest.Webpage.Page;
-using AventStack.ExtentReports.Reporter;
-using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 
 namespace WebsiteTest.Webpage.Steps
@@ -27,6 +25,7 @@ namespace WebsiteTest.Webpage.Steps
         public void GivenUserClicksOnSignInPage()
         {
             page = new HomePage(_driver);
+            if(_driver.Url == "http://automationpractice.com/index.php")
             page.Signin();
         }
 

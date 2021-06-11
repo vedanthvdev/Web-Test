@@ -1,0 +1,7 @@
+{
+    "cucumberautocomplete.steps": [
+        "UtilitaEnergy/Webpage/Steps/*.cs"
+    ],
+    "cucumberautocomplete.syncfeatures":"UtilitaEnergy/Webpage/Features/*features",
+    "cucumberautocomplete.strictGherkinCompletion": true
+}

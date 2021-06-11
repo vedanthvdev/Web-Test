@@ -4,12 +4,12 @@ Background: User Log in
 	Given the website 'http://automationpractice.com/index.php' has loaded
 	And User clicks on Sign in Page 
 	And enters his credentials
-	| Email                     | password |
-	| vedanth.vasudev@gmail.com | abcdef   |
+ | Email           | password |
+ | vedanth@123.com | abcdef   |
 	And clicks Submit
 	Then assert he enters his home page
 
-
+@Alpha
 Scenario Outline: Order T-shirt (and Verify in order history)
 	#Code can be used in future as the item could be changed according to user requirement
 	When User Search for <Item>
@@ -25,15 +25,15 @@ Scenario Outline: Order T-shirt (and Verify in order history)
 	When clicked on your account
 	And navigate the order history and details
 	Then confirm the Item is present with <Payment>
-	And Close the browser
+	#And Close the browser
 
 	Examples:
 	| Test              | Item     | Payment   |
-	| Bank Wire T-shirt | T-shirts | bank wire |
+	#| Bank Wire T-shirt | T-shirts | bank wire |
 	| Cheque T-shirt    | T-shirts | cheque    |
 
 
-
+@Beta
 Scenario Outline: Update Personal Information(First Name)in My Accounts 
 	When clicked on your account
 	And go into personal information tab
